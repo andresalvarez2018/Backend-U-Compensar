@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: es
+uuid: e3c29f85-e085-4050-beec-4e5e92b0be67
+name: 'Backend UCompensar'
+mail: andresfelipealvarez@ucompensar.edu.co
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
