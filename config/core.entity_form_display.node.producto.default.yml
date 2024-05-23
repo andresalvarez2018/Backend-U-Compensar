@@ -1,29 +1,25 @@
-uuid: 4c1f1641-75a7-4bdf-aa5d-a94875bd0173
+uuid: 56941f1d-0cbe-407a-bf51-1e9f16cc1d54
 langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - image.style.thumbnail
-    - node.type.article
+    - field.field.node.producto.body
+    - field.field.node.producto.field_imagenes
+    - field.field.node.producto.field_precio
+    - field.field.node.producto.field_tags
+    - node.type.producto
   module:
-    - comment
-    - image
+    - media_library
     - path
     - text
-_core:
-  default_config_hash: ewbd6G2uX456-bgwseM2Q-KQG3RkASoyHmTh-XR3oLU
-id: node.article.default
+id: node.producto.default
 targetEntityType: node
-bundle: article
+bundle: producto
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -31,29 +27,29 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 20
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 1
+  field_imagenes:
+    type: media_library_widget
+    weight: 122
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
+    third_party_settings: {  }
+  field_precio:
+    type: number
+    weight: 123
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
+    type: entity_reference_autocomplete
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -97,7 +93,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60

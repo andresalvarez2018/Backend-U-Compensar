@@ -1,0 +1,7 @@
+migrate_productos.form:
+  path: '/admin/migrate-productos/form'
+  defaults:
+    _form: '\Drupal\migrate_productos\Form\MigrateProductosForm'
+    _title: 'Migrate Productos Form'
+  requirements:
+    _permission: 'access content'

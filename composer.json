@@ -21,7 +21,10 @@
         "pantheon-systems/drupal-integrations": "^9",
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^11 || ^12",
-        "drupal/admin_toolbar": "^3.4"
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/business_responsive_theme": "^3.0",
+        "drupal/pathauto": "^1.12",
+        "drupal/restui": "^1.21"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"

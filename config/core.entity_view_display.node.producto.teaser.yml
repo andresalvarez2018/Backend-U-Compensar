@@ -1,0 +1,44 @@
+uuid: 251cf08f-c6b4-4256-9a88-f2b4471e4e7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.producto.body
+    - field.field.node.producto.field_imagenes
+    - field.field.node.producto.field_precio
+    - field.field.node.producto.field_tags
+    - node.type.producto
+  module:
+    - text
+    - user
+id: node.producto.teaser
+targetEntityType: node
+bundle: producto
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_imagenes: true
+  field_precio: true
+  langcode: true

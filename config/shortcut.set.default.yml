@@ -1,8 +1,8 @@
 uuid: 132cf94b-2352-437a-9e64-b298e938d30b
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
 id: default
-label: Default
+label: 'Por defecto'

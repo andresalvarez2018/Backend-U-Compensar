@@ -1,19 +1,17 @@
-uuid: d96542f7-c1e9-44e2-91a7-2ac9aa5a99db
+uuid: 97ec70fb-dade-4961-8383-df74c46b383f
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.producto
   module:
     - text
-_core:
-  default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
-id: node.article.body
+id: node.producto.body
 field_name: body
 entity_type: node
-bundle: article
-label: Cuerpo
+bundle: producto
+label: Body
 description: ''
 required: false
 translatable: true

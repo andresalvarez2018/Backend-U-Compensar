@@ -1,0 +1,22 @@
+uuid: 08dce72e-d06b-4356-b89c-91f2fee3296d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_title_producto
+label: 'Node title Producto'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  589af3bf-de68-418e-9e97-00ad4be9ff20:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 589af3bf-de68-418e-9e97-00ad4be9ff20
+    context_mapping:
+      node: node
+    bundles:
+      producto: producto
+selection_logic: and
+weight: -5
+relationships: {  }
