@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.producto.body
+    - field.field.node.producto.field_comentarios
     - field.field.node.producto.field_imagenes
     - field.field.node.producto.field_precio
     - field.field.node.producto.field_tags
     - node.type.producto
   module:
+    - comment
     - text
     - user
 id: node.producto.default
@@ -22,6 +24,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_comentarios:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 105
     region: content
   field_imagenes:
     type: entity_reference_entity_view

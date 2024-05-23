@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.producto.body
+    - field.field.node.producto.field_comentarios
     - field.field.node.producto.field_imagenes
     - field.field.node.producto.field_precio
     - field.field.node.producto.field_tags
@@ -39,6 +40,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_comentarios: true
   field_imagenes: true
   field_precio: true
   langcode: true

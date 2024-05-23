@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.producto.body
+    - field.field.node.producto.field_comentarios
     - field.field.node.producto.field_imagenes
     - field.field.node.producto.field_precio
     - field.field.node.producto.field_tags
     - node.type.producto
   module:
+    - comment
     - media_library
     - path
     - text
@@ -30,6 +32,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comentarios:
+    type: comment_default
+    weight: 125
     region: content
     settings: {  }
     third_party_settings: {  }
