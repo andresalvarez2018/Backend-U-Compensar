@@ -100,14 +100,17 @@ class ListProductosResource extends ResourceBase {
         $tags[] = $term->getName();
       }
 
-      $data[] = [
-        'id' => $node->id(),
-        'title' => $node->getTitle(),
-        'description' => $description,
-        'price' => $node->get('field_precio')->value,
-        'image' => $image_url,
-        'tags' => $tags,
-      ];
+      if ($image_url) {
+        $data[] = [
+          'id' => $node->id(),
+          'title' => $node->getTitle(),
+          'description' => $description,
+          'price' => $node->get('field_precio')->value,
+          'image' => $image_url,
+          'tags' => $tags,
+        ];
+      }
+
     }
 
     return new ResourceResponse($data);
