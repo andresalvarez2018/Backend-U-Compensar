@@ -1,0 +1,14 @@
+uuid: 6a854004-06c5-40a5-8b2c-facf73e12906
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rest_full
+  module:
+    - user
+id: user_add_role_action.rest_full
+label: 'Añade el rol Rest Full al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: rest_full

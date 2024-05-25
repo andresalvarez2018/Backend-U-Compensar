@@ -1,0 +1,17 @@
+uuid: d6754b7f-f30e-4ac0-89fb-513ca4af1b66
+langcode: es
+status: true
+dependencies:
+  module:
+    - apis_app
+    - basic_auth
+    - serialization
+id: apis_app_login
+plugin_id: apis_app_login
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - basic_auth

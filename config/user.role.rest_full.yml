@@ -1,0 +1,14 @@
+uuid: ff3c6a7b-9e65-4b86-8ac6-9638eecc7b58
+langcode: es
+status: true
+dependencies:
+  config:
+    - rest.resource.apis_app_login
+  module:
+    - rest
+id: rest_full
+label: 'Rest Full'
+weight: 4
+is_admin: null
+permissions:
+  - 'restful post apis_app_login'

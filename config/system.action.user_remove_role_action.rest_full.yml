@@ -1,0 +1,14 @@
+uuid: d7537a9a-a953-45b0-baf4-7c4a5c3b42a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rest_full
+  module:
+    - user
+id: user_remove_role_action.rest_full
+label: 'Elimina el rol Rest Full al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: rest_full
