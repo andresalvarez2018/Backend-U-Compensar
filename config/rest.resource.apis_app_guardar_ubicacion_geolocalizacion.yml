@@ -1,0 +1,17 @@
+uuid: b53868ca-3ecb-4f5f-9310-5b933a9719f9
+langcode: es
+status: true
+dependencies:
+  module:
+    - apis_app
+    - basic_auth
+    - serialization
+id: apis_app_guardar_ubicacion_geolocalizacion
+plugin_id: apis_app_guardar_ubicacion_geolocalizacion
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - basic_auth

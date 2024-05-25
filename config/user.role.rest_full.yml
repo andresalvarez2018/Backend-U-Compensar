@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - rest.resource.apis_app_detalle_producto
+    - rest.resource.apis_app_guardar_ubicacion_geolocalizacion
     - rest.resource.apis_app_list_productos
     - rest.resource.apis_app_login
   module:
@@ -15,4 +16,5 @@ is_admin: null
 permissions:
   - 'restful get apis_app_detalle_producto'
   - 'restful get apis_app_list_productos'
+  - 'restful post apis_app_guardar_ubicacion_geolocalizacion'
   - 'restful post apis_app_login'

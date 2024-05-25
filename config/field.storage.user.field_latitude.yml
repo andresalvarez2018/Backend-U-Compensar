@@ -1,0 +1,18 @@
+uuid: 646fd305-3ac6-483a-acc3-ff7f028c93df
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_latitude
+field_name: field_latitude
+entity_type: user
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
