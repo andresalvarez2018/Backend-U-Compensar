@@ -1,0 +1,17 @@
+uuid: 504abec9-c191-4d69-877d-6760952bdd44
+langcode: es
+status: true
+dependencies:
+  module:
+    - apis_app
+    - basic_auth
+    - serialization
+id: apis_app_detalle_producto
+plugin_id: apis_app_detalle_producto
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - basic_auth

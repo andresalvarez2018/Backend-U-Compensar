@@ -4,7 +4,6 @@ namespace Drupal\apis_app\Plugin\rest\resource;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\KeyValueStore\KeyValueFactoryInterface;
-use Drupal\file\Entity\File;
 use Drupal\media\Entity\Media;
 use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
@@ -88,9 +87,12 @@ class ListProductosResource extends ResourceBase {
         $media_entity = Media::load($image_field);
         if ($media_entity) {
           $file_id = $media_entity->getSource()->getSourceFieldValue($media_entity);
-          $bg_file = File::load($file_id);
-          $path = $bg_file->createFileUrl();
-          $image_url = \Drupal::request()->getSchemeAndHttpHost() . $path;
+          $bg_file = \Drupal::entityTypeManager()->getStorage('file')->load($file_id);
+
+          if ($bg_file) {
+            $path = $bg_file->createFileUrl();
+            $image_url = \Drupal::request()->getSchemeAndHttpHost() . $path;
+          }
         }
       }
 

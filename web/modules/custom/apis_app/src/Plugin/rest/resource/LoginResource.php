@@ -16,7 +16,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  *   id = "apis_app_login",
  *   label = @Translation("Login"),
  *   uri_paths = {
- *     "canonical" = "/api/apis-app-login/{id}",
  *     "create" = "/api/apis-app-login"
  *   }
  * )
