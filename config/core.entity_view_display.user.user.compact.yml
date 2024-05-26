@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_apellidos
     - field.field.user.user.field_latitude
     - field.field.user.user.field_longitude
+    - field.field.user.user.field_nombre
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -30,7 +32,9 @@ content:
     weight: 0
     region: content
 hidden:
+  field_apellidos: true
   field_latitude: true
   field_longitude: true
+  field_nombre: true
   langcode: true
   member_for: true

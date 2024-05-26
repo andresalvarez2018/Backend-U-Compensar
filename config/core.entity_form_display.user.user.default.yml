@@ -3,8 +3,10 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_apellidos
     - field.field.user.user.field_latitude
     - field.field.user.user.field_longitude
+    - field.field.user.user.field_nombre
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -24,6 +26,14 @@ content:
   contact:
     weight: 5
     region: content
+  field_apellidos:
+    type: string_textfield
+    weight: 35
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_latitude:
     type: number
     weight: 33
@@ -36,6 +46,14 @@ content:
     weight: 32
     region: content
     settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_nombre:
+    type: string_textfield
+    weight: 34
+    region: content
+    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   language:

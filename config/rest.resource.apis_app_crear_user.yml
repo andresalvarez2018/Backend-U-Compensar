@@ -1,0 +1,17 @@
+uuid: 428cfa85-2d6a-4d5f-a3d2-735df3b00679
+langcode: es
+status: true
+dependencies:
+  module:
+    - apis_app
+    - basic_auth
+    - serialization
+id: apis_app_crear_user
+plugin_id: apis_app_crear_user
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - basic_auth
