@@ -99,7 +99,7 @@ class CrearUserResource extends ResourceBase {
     $user->set("field_apellidos", $data['apellidos']);
     $user->activate();
     $user->save();
-    return new ModifiedResourceResponse($data, 201);
+    return new JsonResponse(['message' => 'Usuario creado correctamente.']);
   }
 
 }
